@@ -24,7 +24,8 @@ jobs:
           pip install requests pyyaml
 
       - name: Run project generator script
-        run: python markdown_generator/generate_projects.py
+        working-directory: ./markdown_generator
+        run: python generate_projects.py
 
       - name: Commit and push changes
         run: |
