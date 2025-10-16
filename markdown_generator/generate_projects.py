@@ -68,20 +68,33 @@ def create_project_files(repos):
         # Define the path for the new markdown file
         file_path = os.path.join(PROJECTS_DIR, f'{slug}.md')
         
-        # Create the content for the markdown file
-        file_content = f"""---
-title: "{repo_name}"
-excerpt: "{description}"
-collection: projects
-tags:
-{yaml.dump(tags, default_flow_style=False).indent(2)}
-permalink: /projects/{slug}
----
+        # --- Build the file content ---
+        # Start with the basic front matter
+        file_content_parts = [
+            "---",
+            f'title: "{repo_name}"',
+            f'excerpt: "{description}"',
+            "collection: projects",
+        ]
 
-This project is available on GitHub.
+        # Add tags only if they exist
+        if tags:
+            file_content_parts.append("tags:")
+            for tag in tags:
+                file_content_parts.append(f"  - {tag}")
 
-[View on GitHub]({url})
-"""
+        # Add the rest of the front matter and content
+        file_content_parts.extend([
+            f"permalink: /projects/{slug}",
+            "---",
+            "",
+            "This project is available on GitHub.",
+            "",
+            f"[View on GitHub]({url})",
+        ])
+
+        file_content = "\n".join(file_content_parts)
+        # --- End of building file content ---
         
         # Write the content to the file
         with open(file_path, 'w') as f:
