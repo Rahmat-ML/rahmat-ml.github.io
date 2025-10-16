@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Rahmat Ansari / Rahmat's academic portfolio"
+title                    : "Rahmat Ansari"
 title_separator          : "-"
 name                     : &name "Rahmatollah Ansari"
 description              : &description "You can get more information about me here!"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,9 +26,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Rahmat Ansari"
   pronouns         : "he/his"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Highly motivated AI student"
   location         : "Tehran / Iran"
-  employer         : "Iran University of Science and Technology"
+  employer         : "IUST"
   uri              : # URL
   email            : "rahmat.ansari.dev@gmail.com" 
 
@@ -38,8 +38,8 @@ author:
   googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : "https://orcid.org/0009-0003-6392-1966"
+  orcid            : "https://orcid.org/0009-0003-6392-1966"
+  semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Rahmat-Ansari-2"
   scopus           : # URL
@@ -218,16 +218,16 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  projects:
     output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  awards:
     output: true
     permalink: /:collection/:path/
-  talks:
+  blog:
     output: true
     permalink: /:collection/:path/
 
