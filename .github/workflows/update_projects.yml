@@ -3,7 +3,7 @@ name: Update GitHub Projects
 on:
   push:
     branches:
-      - master  # Or whichever branch you use as your primary
+      - main  # Or whichever branch you use as your primary
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add _projects/
+          git add -A
           # Only commit if there are changes
           if ! git diff --staged --quiet; then
             git commit -m "Automated: Update project files from GitHub"
@@ -38,3 +38,4 @@ jobs:
           else
             echo "No changes to commit."
           fi
+
