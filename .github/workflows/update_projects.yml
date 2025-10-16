@@ -9,6 +9,8 @@ on:
 jobs:
   update-projects:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # <-- This is the line that fixes the permission issue
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
