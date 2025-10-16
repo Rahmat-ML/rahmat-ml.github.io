@@ -1,0 +1,40 @@
+name: Update GitHub Projects
+
+on:
+  push:
+    branches:
+      - master  # Or whichever branch you use as your primary
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
+
+      - name: Run project generator script
+        run: python markdown_generator/generate_projects.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _projects/
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "Automated: Update project files from GitHub"
+            git push
+          else
+            echo "No changes to commit."
+          fi

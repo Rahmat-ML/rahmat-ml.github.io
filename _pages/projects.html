@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Here are some of my projects from my GitHub profile. This page is automatically updated from my GitHub repositories.</p>
+
+<hr>
+
+{% for post in site.projects reversed %}
+  {% include archive-single.html %}
+{% endfor %}
