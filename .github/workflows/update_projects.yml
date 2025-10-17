@@ -3,7 +3,7 @@ name: Update GitHub Projects
 on:
   push:
     branches:
-      - main  # Or whichever branch you use as your primary
+      - master  # Or whichever branch you use as your primary
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
