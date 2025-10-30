@@ -13,10 +13,10 @@ title                    : "Rahmat Ansari"
 title_separator          : "-"
 name                     : &name "Rahmatollah Ansari"
 description              : &description "You can get more information about me here!"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : "https://rahmat-ml.github.io"
+url                      : "https://rallm.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/rahmat-ml/rahmat-ml.github.io"
+repository               : "https://github.com/rallm/rallm.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -48,7 +48,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "rahmat-ml"
+  github           : "rallm"
   kaggle           : "enansari"  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

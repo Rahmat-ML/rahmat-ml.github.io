@@ -13,4 +13,4 @@ permalink: /projects/math-for-ml
 
 This project is available on GitHub.
 
-[View on GitHub](https://github.com/Rahmat-ML/math-for-ml)
+[View on GitHub](https://github.com/rallm/math-for-ml)

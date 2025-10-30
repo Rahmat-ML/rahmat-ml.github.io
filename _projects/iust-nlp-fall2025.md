@@ -13,4 +13,4 @@ permalink: /projects/iust-nlp-fall2025
 
 This project is available on GitHub.
 
-[View on GitHub](https://github.com/Rahmat-ML/IUST-NLP-Fall2025)
+[View on GitHub](https://github.com/rallm/IUST-NLP-Fall2025)

@@ -18,7 +18,7 @@ except Exception as e:
     exit()
 
 REPOS_TO_SKIP = [
-    'rahmat-ml.github.io' 
+    'rallm.github.io' 
 ]
 PROJECTS_DIR = '../_projects'
 

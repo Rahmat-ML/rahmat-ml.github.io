@@ -18,4 +18,4 @@ permalink: /projects/pytorch-imdb-sentiment-lstm
 
 This project is available on GitHub.
 
-[View on GitHub](https://github.com/Rahmat-ML/pytorch-imdb-sentiment-lstm)
+[View on GitHub](https://github.com/rallm/pytorch-imdb-sentiment-lstm)

@@ -15,4 +15,4 @@ permalink: /projects/pytorch-linear-dnn-fundamentals
 
 This project is available on GitHub.
 
-[View on GitHub](https://github.com/Rahmat-ML/PyTorch-Linear-DNN-Fundamentals)
+[View on GitHub](https://github.com/rallm/PyTorch-Linear-DNN-Fundamentals)

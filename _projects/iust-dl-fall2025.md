@@ -13,4 +13,4 @@ permalink: /projects/iust-dl-fall2025
 
 This project is available on GitHub.
 
-[View on GitHub](https://github.com/Rahmat-ML/IUST-DL-Fall2025)
+[View on GitHub](https://github.com/rallm/IUST-DL-Fall2025)
